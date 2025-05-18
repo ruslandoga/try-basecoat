@@ -3,7 +3,7 @@
   "description": " ",
   "license": "MIT",
   "scripts": {
-    "tailwind": "npx @tailwindcss/cli -i css/app.css -o ../priv/static/assets/app.css",
+    "tailwind": "npx @tailwindcss/cli -i css/app.css -o ../priv/static/assets/css/app.css",
     "watch:css": "npm run tailwind -- --watch",
     "deploy:css": "NODE_ENV=production npm run tailwind -- --minify"
   },
