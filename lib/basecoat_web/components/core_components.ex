@@ -408,6 +408,12 @@ defmodule BasecoatWeb.CoreComponents do
     """
   end
 
+  def checkbox(assigns) do
+    ~H"""
+    <div class="mask-[image:var(--check-icon)]"></div>
+    """
+  end
+
   ## JS Commands
 
   def show(js \\ %JS{}, selector) do

@@ -42,15 +42,15 @@ config :esbuild,
   ]
 
 # Configure tailwind (the version is required)
-config :tailwind,
-  version: "4.0.9",
-  basecoat: [
-    args: ~w(
-      --input=assets/css/app.css
-      --output=priv/static/assets/css/app.css
-    ),
-    cd: Path.expand("..", __DIR__)
-  ]
+# config :tailwind,
+#   version: "4.0.9",
+#   basecoat: [
+#     args: ~w(
+#       --input=assets/css/app.css
+#       --output=priv/static/assets/css/app.css
+#     ),
+#     cd: Path.expand("..", __DIR__)
+#   ]
 
 # Configures Elixir's Logger
 config :logger, :default_formatter,

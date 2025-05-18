@@ -26,7 +26,7 @@ config :basecoat, BasecoatWeb.Endpoint,
   secret_key_base: "j0v6xDeYM/cPX+FIxHW4mX0sPEvQ+j6BgJcJVMBdybr08IW6N7qF/5fTKOdOwrFq",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:basecoat, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:basecoat, ~w(--watch)]}
+    npm: ["run", "watch:css", cd: Path.expand("../assets", __DIR__)]
   ]
 
 # ## SSL Support

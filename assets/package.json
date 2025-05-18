@@ -1,7 +1,19 @@
 {
-  "scripts": {},
+  "repository": {},
+  "description": " ",
+  "license": "MIT",
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i css/app.css -o ../priv/static/assets/app.css",
+    "watch:css": "npm run tailwind -- --watch",
+    "deploy:css": "NODE_ENV=production npm run tailwind -- --minify"
+  },
+  "dependencies": {
+    "topbar": "^3.0.0"
+  },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.7",
     "basecoat-css": "^0.1.2",
+    "tailwindcss": "^4.1.7",
     "topbar": "^3.0.0"
   }
 }
