@@ -1,0 +1,7 @@
+{
+  "scripts": {},
+  "devDependencies": {
+    "basecoat-css": "^0.1.2",
+    "topbar": "^3.0.0"
+  }
+}
